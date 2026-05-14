@@ -2,7 +2,8 @@
 import streamlit as st
 
 from snowflake.snowpark.functions import col
-
+from snowflake.snowpark import Session
+session = Session.builder.configs(st.secrets["connections.snowflake"]).create()
 
 
 # Write directly to the app
