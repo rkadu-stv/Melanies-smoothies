@@ -31,7 +31,7 @@ ingredients_list = st.multiselect(
 
 st.write(ingredients_list)
 st.text(ingredients_list)
-
+import requests
 if ingredients_list:
     ingredients_string = ''
 
